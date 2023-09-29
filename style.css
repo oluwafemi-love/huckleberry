@@ -1,12 +1,100 @@
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+
+/* Gray Colors */
+--black: hsl(0deg, 0%, 0%);
+--verydark: hsl(0deg, 0%, 10%);
+--dark: hsl(0deg, 0%, 30%); 
+--medium: hsl(0deg, 0%, 40%);
+--light: hsl(0deg, 0%, 60%); 
+--white: hsl(0deg, 0%, 100%);
+
+/* Primary Color: Green */
+--primary: hsl(160deg, 100%, 30%);
+
+/* Secondary Color: Gold */
+--sec-lighter: hsl(45deg, 100%, 50%);
+--sec-darker: hsl(45deg, 100%, 40%) (darker);
+
+/* Border */
+--border-sz-main: 8px;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  line-height: 30px;
 }
 
 /* Add styles here! */
+.max-width-wrapper{
+  /* width: 1280px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 128px;
+}
+
+header{
+  background-color: var(--white);
+  border-bottom: var(--border-sz-main) solid var(--light);
+}
+h1.title{
+  font-weight: 800;
+  font-size: calc(32rem/16);
+}
+header p{
+  font-weight: 400;
+  font-size: calc(20rem/16);
+  
+}
+.intro-chunk{
+  width: 400px;
+  margin-left: 120px;
+  
+}
+.intro-chunk strong{
+  color: var(--primary);
+}
+
+
+
+
+main{
+  background-color: var(--dark);
+}
+
+h2.indented-heading{
+  font-weight: 800;
+  font-size: calc(24rem/16);
+}
+
+main p{
+  font-weight: 500;
+  font-size: calc(20rem/16);
+}
+
+.card{
+  background-color: var(--white);
+  width: 800px;
+  /* margin: auto; */
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: var(--border-sz-main) solid var(--light);
+  padding: 8px 24px 24px 24px;
+}
+
+.indented-heading{
+  background-color: var(--sec-lighter);
+  width: max-content;
+  padding: 16px 32px;
+  border-bottom: var(--border-sz-main) solid #CC9900;
+  margin: 0;
+  margin-left: -24px;
+}
+
+.indent-heading-wrapper{
+  
+  margin-left: -8px;
+}
